@@ -10,5 +10,5 @@ training_set = dataset.build_full_trainset()
 svd = SVD()
 svd.fit(training_set)
 svd.predict(15, 1956)
-model_selection.cross_validate(svd, dataset, measures=["RMSE","MAE"])
+model_selection.cross_validate(svd, dataset, measures=["RMSE", "MAE"])
 # RMSE stands for Root Mean Square Error and MAE stands for Mean Absolute Error
